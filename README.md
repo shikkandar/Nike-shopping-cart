@@ -11,8 +11,11 @@ Welcome to the Nike Shoe Store project! This project is a simple e-commerce webs
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
 - [Technologies Used](#technologies-used)
+- [Dependencies](#dependencies)
 - [Contributing](#contributing)
+- [Testing](#testing)
 - [License](#license)
+- [Acknowledgments](#acknowledgments)
 
 ## Features
 
@@ -38,27 +41,3 @@ Make sure you have the following software installed:
 
    ```bash
    git clone https://github.com/your-username/nike-shoe-store.git
-
-cd nike-shoe-store
-
-npm install
-
-npm start
-
-nike-shoe-store/
-|-- public/
-|-- src/
-|   |-- component/
-|       |-- front/
-|           |-- Cart.js
-|           |-- Footer.js
-|           |-- Header.js
-|           |-- Home.js
-|           |-- SignUp.js
-|       |-- back/
-|           |-- data/
-|               |-- Data.js
-|-- App.js
-|-- README.md
-|-- package.json
-|-- ...
