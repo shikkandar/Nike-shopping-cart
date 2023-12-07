@@ -12,7 +12,16 @@
   
     const [isShowAdd, setIsShowAdd] = useState('');
     const [isShowRemove, setIsShowRemove] = useState('');
-  
+    //pagination
+    const[curentPage,setCurrentPage]=useState(1)
+    const itemsPerPage=20;
+    const lastIndex=curentPage*itemsPerPage;
+    const firstIndex=lastIndex-itemsPerPage
+
+    const paginate=(i)=>{
+      setCurrentPage(i)
+    }
+    const currentProducts=products.slice(firstIndex,lastIndex)
     // cart added or not checking function
     const isItemCart = (productId) => {
       return !!cartItems.find((data) => data.productId === productId);
@@ -56,8 +65,8 @@
   
     return (
       <Container fluid className='mt-5'>
-        <div className="d-flex flex-wrap gap-5 justify-content-center align-items-center ">
-          {products.map((data, i) => (
+        <div className="d-flex flex-wrap gap-5 justify-content-center align-items-center " style={{minHeight:'70vh'}}>
+          {currentProducts.map((data, i) => (
             <div key={i} style={{ width: '22rem' }} className='d-flex flex-column ' data-aos="zoom-in-up">
               <Image src={data.src} fluid />
               <div className='px-2'>
@@ -95,6 +104,14 @@
             </div>
           ) : null}
         </div>
+        <Container className='d-flex justify-content-center mt-5'>
+        {Array.from({ length: Math.ceil(products.length / itemsPerPage) }, (_, i) => (
+          <button className='btn btn-dark mx-2' key={i + 1} onClick={() => paginate(i + 1)}>
+            {i + 1}
+          </button>
+        ))}
+        </Container>
+
       </Container>
     );
   };

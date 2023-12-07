@@ -84,6 +84,6 @@
 @media (max-width:360px) {
    
     .s-cart{
-        column-gap: 0px;
+        column-gap: 50px;
     }
 }
