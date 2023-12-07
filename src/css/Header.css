@@ -47,7 +47,7 @@
     position: fixed;
     bottom: 0;
     left: 0px;
-    animation: progress 2.1s ease-in-out  1 forwards ;
+    animation: progress 1s ease-in-out  1 forwards ;
 }
 @keyframes progress {
     from{

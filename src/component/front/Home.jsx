@@ -36,7 +36,7 @@
         setIsShowAdd(title);
         setTimeout(() => {
           setIsShowAdd('');
-        }, 2000);
+        }, 1000);
       } else {
         alert(`${title}: already added in the list`);
       }
@@ -50,7 +50,7 @@
       setIsShowRemove(title);
       setTimeout(() => {
         setIsShowRemove('');
-      }, 2000);
+      }, 1000);
       localStorage.setItem('cartItems', JSON.stringify(updatedCart));
     };
   
