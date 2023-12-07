@@ -20,6 +20,7 @@
 
     const paginate=(i)=>{
       setCurrentPage(i)
+      window.scrollTo(0, 0); 
     }
     const currentProducts=products.slice(firstIndex,lastIndex)
     // cart added or not checking function
