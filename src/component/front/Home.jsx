@@ -94,7 +94,7 @@ const Home = () => {
           ))}
           {isShowAdd.length !== 0 ? (
             <div data-aos='slide-left' data-aos-duration="600"  data-aos-easing="ease-in-out" className="alert-mesage p-2 text-center fw-bold d-flex justify-content-arround align-items-center" style={{backgroundColor:'#A8F1C6',color:'#133C23'}} >
-              <div>{isShowAdd} Added in cart</div> <svg className='alert-svg' xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path fill="#73ca93" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+              <div>{isShowAdd} Added in cart</div> <svg style={{backgroundColor:'#188344'}}  className='alert-svg' xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path fill="#73ca93" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
               <div className="progress-line " style={{backgroundColor:'#188344'}}></div>
             </div>
           ) : null}

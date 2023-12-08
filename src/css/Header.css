@@ -53,16 +53,19 @@
     left: 0px;
     animation: progress 1.5s ease-in-out  1 forwards ;
 }
+
+
 .alert-svg{
     width: 20px;
     height: 20px;
-    background-color:rgb(126, 21, 42);
     border-radius: 10px;
-   align-self: start;
-   padding: 3px;
- 
+    align-self: start;
+    padding: 3px;
+    background-color:#90120E ;
    
 }
+
+
 
 
 
@@ -75,7 +78,7 @@
   position: absolute;
   width: 100%;
 height: 100%;
-  background: url("https://cdn.wallpapersafari.com/56/80/jbBrmU.jpg"), #000;
+  background: url(../img/1597758.gif), #000;
   background-position: center;
   background-size: cover;
 
@@ -167,22 +170,22 @@ h2 {
 }
 
 button {
-  background: #fff;
-  color: #000;
+  background: #000000;
+  color: #fff;
   font-weight: 600;
   border: none;
   padding: 12px 20px;
   cursor: pointer;
-  border-radius: 3px;
+  
   font-size: 16px;
-  border: 2px solid transparent;
   transition: 0.3s ease;
+  border-radius: 10px;
 }
 
 button:hover {
   color: #fff;
-  border-color: #fff;
-  background: rgba(255, 255, 255, 0.15);
+  
+  background: rgba(32, 32, 32,0.4);
 }
 
 .register {
@@ -232,7 +235,7 @@ button:hover {
 }
 @media (max-width:1000px) {
     .signUp::before{
-        background-image: url("https://img.freepik.com/premium-photo/pair-nike-running-shoes-are-street_915367-1637.jpg");
+        background-image: url(../img/1597775.jpg);
     }
 }
 @media (max-width:600px) {

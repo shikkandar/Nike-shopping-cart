@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import { MyContext } from '../../App';
 import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
   const { cartItems, setCartItems } = useContext(MyContext);
@@ -70,6 +71,11 @@ const Cart = () => {
     localStorage.setItem('cartItems', JSON.stringify(updatedQuantity));
   };
 
+  const check=()=>{
+    window.scrollTo({
+      top:0
+    })
+  }
   return (
     <Container className='cart'>
       <h1 className='text-center mt-3'>Shopping Cart</h1>
@@ -113,7 +119,7 @@ const Cart = () => {
           <div className='text-end h5'>Sub Total: ${subTotalCost}</div>
           <hr />
           <div className='d-flex justify-content-end'>
-            <button className='btn btn-dark'>Checkout</button>
+            <Link to='/signUp'><button className='btn btn-dark' onClick={check}>Checkout</button></Link>
           </div>
         </div>
       )}
