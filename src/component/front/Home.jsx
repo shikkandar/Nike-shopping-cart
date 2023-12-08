@@ -1,4 +1,4 @@
-  import React, { useContext, useState, useEffect } from 'react';
+  import { useContext, useState, useEffect } from 'react';
   import { ShoeContext } from '../back/data/Data';
   import Image from 'react-bootstrap/Image';
   import 'bootstrap/dist/css/bootstrap.min.css';

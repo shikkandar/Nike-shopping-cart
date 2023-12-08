@@ -1,4 +1,3 @@
-import React from 'react'
 import nomatch from '../../img/blue.png'
 import Image from 'react-bootstrap/Image';
 const Nomath = () => {
