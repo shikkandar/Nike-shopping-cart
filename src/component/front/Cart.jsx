@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { MyContext } from '../../App';
-import { Container } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Cart = () => {
@@ -124,7 +124,14 @@ const Cart = () => {
         </div>
       )}
       {cartItems.length === 0 && (
-        <div className='h2 text-center mt-5 fw-bold'>No Items Added In Cart <i key={1} className="bi bi-cart3"></i></div>
+        <div className='d-flex justify-content-center align-items-center flex-column'>
+        <div className='h2 text-center mt-5 fw-bold'>
+          No Items Added In Cart <i key={1} className="bi bi-cart3"></i>
+        </div>
+        <Link to='/' className='mt-3'>
+          <Button variant='outline-dark' size='lg'>Shop Now</Button>
+        </Link>
+      </div>
       )}
     </Container>
   );
